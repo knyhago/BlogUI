@@ -1,17 +1,49 @@
-.form{
-    margin-top: 200px;
-    margin-left: 250px;
-    color: black;
+.form {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
     max-width: 400px;
-    background-color: gray;
-    height: 400px;
-    border-radius: 10px;   
-    padding-top: 60px;
-
+    background-color: #3498db; /* Blue background color */
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form-control{
-    background-color: gray;
+.form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
 }
 
+.form input[type="text"],
+.form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #fff; /* White border */
+    margin-bottom: 20px;
+    background-color: #ecf0f1; /* Light gray input background */
+    color: #444;
+}
 
+.form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form button {
+    padding: 10px 20px;
+    background-color: #2ecc71; /* Green button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
