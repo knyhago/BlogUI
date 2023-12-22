@@ -1,3 +1,4 @@
+/* Global styles */
 .App {
   text-align: center;
 }
@@ -13,26 +14,27 @@
   }
 }
 
+/* Styles for the main header */
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding: 20px; /* Add padding for better mobile display */
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Responsive adjustments for mobile screens */
+@media screen and (max-width: 768px) {
+  .App-header {
+    min-height: 100vh;
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App-logo {
+    height: 20vmin; /* Adjust the logo size for mobile screens */
+  }
+
+  /* Additional mobile styles for better readability */
+  .App {
+    padding: 20px; /* Add padding to the entire app for mobile */
   }
 }
