@@ -12,22 +12,25 @@
 }
 
 .card {
-  border: 1px solid #ccc;
+  border: 1px solid #cd3fa5; /* Lighter border */
   border-radius: 8px;
-  padding: 10px;
-  background-color: #f9f9f9;
+  padding: 20px;
+  background-color: #1ca673; /* White background */
   width: 100%; /* Cards take full width */
   box-sizing: border-box; /* Ensure padding is included in width calculation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
 .card-header {
   font-weight: bold;
-  font-size: 1.2em;
-  margin-bottom: 10px;
+  font-size: 1.5em; /* Slightly larger font */
+  margin-bottom: 15px; /* More space between header and body */
+  color: #333; /* Dark text */
 }
 
 .card-body {
   margin-bottom: 15px;
+  color: #555; /* Slightly darker text */
 }
 
 .card-footer {
@@ -37,29 +40,30 @@
 }
 
 .btn {
-  padding: 0.5em 1em; /* Use relative units for padding */
+  padding: 10px 20px; /* Larger button padding */
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  min-width: 12px; /* Ensure a minimum width for the buttons */
+  min-width: 100px; /* Slightly wider buttons */
+  text-transform: uppercase; /* Uppercase text */
 }
 
 .btn-danger {
-  background-color: #ff5858;
+  background-color: #ff5252; /* Red for danger */
   color: #fff;
 }
 
 .btn-danger:hover {
-  background-color: #ff0000;
+  background-color: #ff1744; /* Darker red on hover */
 }
 
 .btn-warning {
-  background-color: #ffc107;
+  background-color: #ffa726; /* Orange for warning */
   color: #333;
 }
 
 .btn-warning:hover {
-  background-color: #ffbb33;
+  background-color: #ff7043; /* Darker orange on hover */
 }
 
 /* Styles for the sidebar */
@@ -71,34 +75,35 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #333; /* Dark sidebar */
   height: 100%;
 }
 
 .sidebar a {
   padding: 16px;
   text-decoration: none;
-  font-size: 20px;
-  color: white;
+  font-size: 18px; /* Slightly smaller font */
+  color: #fff; /* White text */
   display: block;
   transition: 0.3s;
 }
 
 .sidebar a:hover {
-  color: #f1f1f1;
+  background-color: #444; /* Darker background on hover */
 }
 
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
-  color: white;
+  background-color: #333; /* Dark button */
+  color: #fff;
   padding: 10px 15px;
   border: none;
+  display: block;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: #555; /* Darker button on hover */
 }
 
 /* Media query for smaller screens */
@@ -113,15 +118,15 @@
     width: 100%; /* Occupy full width */
     height: auto; /* Allow height to adjust based on content */
     position: static; /* Reset position to flow in document */
-    background-color: transparent; /* Adjust appearance */
+    background-color: #333; /* Dark sidebar */
   }
 
   .sidebar a {
-    padding: 8px; /* Adjust padding for smaller screens */
+    padding: 12px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Smaller font size */
   }
 
   .openbtn {
-    display: block; /* Show the open button */
     margin: 10px auto; /* Center the button */
   }
 

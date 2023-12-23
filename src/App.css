@@ -1,36 +1,28 @@
 /* Global styles */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: #bfe2f3; /* Light background color */
+  /* Use the following line to set a background image */
+  background-image: url('https://img.freepik.com/free-vector/hand-drawn-abstract-shapes-background_23-2149097297.jpg');
+  /* Additional background properties */
+  background-size: cover; /* Cover the entire element with the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-attachment: fixed; /* Fix the background in place */
 }
 
 /* Styles for the main header */
 .App-header {
-  background-color: #282c34;
-  padding: 20px; /* Add padding for better mobile display */
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #ff6b6b; /* Reddish header background */
+  padding: 40px; /* Increased padding for header */
+  font-size: calc(12px + 2vmin); /* Adjusted font size */
+  color: #fff; /* White text */
+  border-bottom: 4px solid #333; /* Darker border at the bottom */
 }
 
 /* Responsive adjustments for mobile screens */
 @media screen and (max-width: 768px) {
   .App-header {
-    min-height: 100vh;
-    display: block;
-  }
-
-  .App-logo {
-    height: 20vmin; /* Adjust the logo size for mobile screens */
+    padding: 30px; /* Adjusted padding for mobile */
   }
 
   /* Additional mobile styles for better readability */
