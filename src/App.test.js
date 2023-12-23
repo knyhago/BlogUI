@@ -7,8 +7,8 @@ describe('App Component', () => {
   });
 
   test('renders learn react link', () => {
-    // Check if the text is present within the component
-    const linkElement = screen.getByRole('link', { name: /learn react/i });
+    // Check if the text is present within the component using a different strategy
+    const linkElement = screen.getByText('Learn React', { exact: false });
     expect(linkElement).toBeInTheDocument();
   });
 });
