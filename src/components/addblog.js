@@ -26,7 +26,7 @@ class Addblog extends Component {
             const heading = this.state.heading;
             const data = { heading, desc };
             e.preventDefault();
-            fetch('https://blogap1-46c3501b7198.herokuapp.com/postblog', {
+            fetch('https://blogapis-h3ny.onrender.com/postblog', {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data)
