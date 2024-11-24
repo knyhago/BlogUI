@@ -5,7 +5,7 @@ import Blogdisplay from './blogDisplay';
 
 
 
-const url="https://blogap1-46c3501b7198.herokuapp.com/getblog"
+const url="https://blogapis-h3ny.onrender.com/getblog"
 
 
 
