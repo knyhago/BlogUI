@@ -7,7 +7,7 @@ const Blogdisplay = (props) => {
 
     const Delee = (e) => {
         var id = e.target.value;
-        fetch(`https://blogap1-46c3501b7198.herokuapp.com/deleteblog/` + id, { method: 'DELETE' })
+        fetch(`https://blogapis-h3ny.onrender.com/deleteblog/` + id, { method: 'DELETE' })
             .then(() => {
                 alert("Deleted");
                 window.location.reload(); // Refresh the page after deletion
