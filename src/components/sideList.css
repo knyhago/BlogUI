@@ -1,43 +1,48 @@
-@media screen and (max-width: 768px) {
-  .sidebar {
-      width: 0;
-      overflow: hidden;
-      transition: 0.3s;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      height: 100%;
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0; /* Ensure there's no default padding from the browser */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font stack */
+    -webkit-font-smoothing: antialiased; /* Smoother font rendering on WebKit browsers */
+    -moz-osx-font-smoothing: grayscale; /* Smoother font rendering on Firefox on macOS */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Improved readability by increasing line height */
+    box-sizing: border-box; /* Ensures padding and borders are included in element's total width and height */
   }
-
-  .sidebar a {
-      padding: 16px;
-      text-decoration: none;
-      font-size: 20px;
-      color: white;
-      display: block;
-      transition: 0.3s;
+  
+  /* Styling for code snippets */
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; /* Adjusted monospace font stack */
+    background-color: #f5f5f5; /* Light background for code blocks */
+    padding: 5px 10px; /* Spacing around the code text */
+    border-radius: 4px; /* Rounded corners for a smoother look */
+    font-size: 1.1em; /* Slightly larger font size for readability */
   }
-
-  .sidebar a:hover {
-      color: #f1f1f1;
+  
+  /* Mobile-responsive adjustments */
+  @media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens/mobile */
+    body {
+      padding: 10px; /* Smaller padding for mobile */
+      font-size: 14px; /* Adjust font size for readability on mobile */
+    }
+  
+    /* Optional: Ensure elements like headings and paragraphs adjust for mobile */
+    h1, h2, h3, h4, h5, h6 {
+      font-size: 1.5em; /* Adjust heading sizes for mobile */
+    }
+  
+    p {
+      font-size: 1em; /* Adjust paragraph text size for mobile */
+    }
+  
+    /* Example of adjusting layout for mobile */
+    .container {
+      width: 100%; /* Ensure containers take full width on smaller screens */
+      padding: 0 15px; /* Add side padding to prevent content from touching the edges */
+    }
+  
+    /* Additional mobile-specific styling can go here */
   }
-
-  .openbtn {
-      font-size: 20px;
-      cursor: pointer;
-      background-color: #111;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-  }
-
-  .openbtn:hover {
-      background-color: #444;
-  }
-
-  .sidebar.open {
-      width: 250px;
-  }
-}
+  

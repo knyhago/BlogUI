@@ -2,31 +2,46 @@
 .App {
   text-align: center;
   background-color: #bfe2f3; /* Light background color */
-  /* Use the following line to set a background image */
-  background-image: url('https://img.freepik.com/free-vector/hand-drawn-abstract-shapes-background_23-2149097297.jpg');
-  /* Additional background properties */
-  background-size: cover; /* Cover the entire element with the background image */
-  background-repeat: no-repeat; /* Prevent the background image from repeating */
-  background-attachment: fixed; /* Fix the background in place */
+  /* Background image with improved URL */
+ 
 }
 
 /* Styles for the main header */
 .App-header {
   background-color: #ff6b6b; /* Reddish header background */
-  padding: 40px; /* Increased padding for header */
+  padding: 50px 20px; /* Increased padding for header */
   font-size: calc(12px + 2vmin); /* Adjusted font size */
   color: #fff; /* White text */
   border-bottom: 4px solid #333; /* Darker border at the bottom */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  margin-bottom: 20px; /* Margin to create space below header */
+}
+
+/* Main content area */
+.App-content {
+  padding: 20px;
+  max-width: 1200px; /* Limit content width */
+  margin: 0 auto; /* Center the content */
+  background-color: rgba(255, 255, 255, 0.8); /* Slight transparent background for readability */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for content box */
+  backdrop-filter: blur(5px); /* Optional blur effect behind the content */
 }
 
 /* Responsive adjustments for mobile screens */
 @media screen and (max-width: 768px) {
   .App-header {
-    padding: 30px; /* Adjusted padding for mobile */
+    padding: 30px 20px; /* Adjusted padding for mobile */
+    font-size: calc(14px + 2vmin); /* Adjust font size for readability on mobile */
   }
 
-  /* Additional mobile styles for better readability */
+  /* Adjust content padding for smaller screens */
+  .App-content {
+    padding: 15px; /* Less padding on mobile for compact view */
+  }
+
   .App {
     padding: 20px; /* Add padding to the entire app for mobile */
+    height: auto; /* Ensure the content area height adjusts on smaller screens */
   }
 }
