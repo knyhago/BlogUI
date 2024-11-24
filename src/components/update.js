@@ -33,7 +33,7 @@ class update extends Component
         const desc=this.state.descc;
         const topic=this.state.topicc;
         const updata={topic,desc}
-       fetch(`https://blogap1-46c3501b7198.herokuapp.com/update/${this.props._id}`,{
+       fetch(`https://blogapis-h3ny.onrender.com/update/${this.props._id}`,{
         method:'PUT',
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify(updata)
